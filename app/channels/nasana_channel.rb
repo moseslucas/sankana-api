@@ -1,6 +1,6 @@
 class NasanaChannel < ApplicationCable::Channel
   def subscribed
-    stream_from "nasana"
+    stream_from "nasana_#{current_user}"
   end
 
   def unsubscribed
