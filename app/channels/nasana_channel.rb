@@ -8,6 +8,6 @@ class NasanaChannel < ApplicationCable::Channel
   end
 
   def broadcast_position_to_tracker(data)
-    ActionCable.server.broadcast "nasana",  {position: data}
+    ActionCable.server.broadcast "nasana_#{current_user}",  {position: data}
   end
 end
