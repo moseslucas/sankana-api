@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
+  url: redis://h:p9633821c801e8578d0a1addb603850573b7b23eeb41d776b4d097ce1c6699053@ec2-35-172-85-214.compute-1.amazonaws.com:47729
   channel_prefix: sakana-api
