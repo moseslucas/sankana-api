@@ -9,7 +9,7 @@ module ApplicationCable
     private
       def find_verified_user
         begin
-          token = request.headers[:HTTP_SEC_WEBSOCKET_PROTOCOL].split(' ').last
+          token = request.params[:token]
           if (!token.nil?)
             token
           else
